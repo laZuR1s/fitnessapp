@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fitnessapp</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="choose_your_activity">Choose Your Activity</string>
+    <string name="push_ups">Отжимания</string>
+    <string name="press_exercises">Занятия на пресс</string>
+    <string name="pull_ups">Подтягивания</string>
+    <string name="sit_ups">Приседания</string>
+</resources>

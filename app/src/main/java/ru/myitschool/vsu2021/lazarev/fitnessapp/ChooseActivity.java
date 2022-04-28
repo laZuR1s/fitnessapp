@@ -20,21 +20,22 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Button btnPushUps=(Button) findViewById(R.id.btn_pushups);
-//       View.OnClickListener oclGoToPushUps= new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getApplicationContext()
-//                        ,PushUpsActivity.class));
-//            }
-//        };
-//        btnPushUps.setOnClickListener(oclGoToPushUps);
-
-
-
-
-
         setContentView(R.layout.activity_choose);
+        Button btnPushUps=(Button) findViewById(R.id.btn_pushups);
+       View.OnClickListener oclGoToPushUps= new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext()
+                        ,PushUpsActivity.class));
+            }
+        };
+        btnPushUps.setOnClickListener(oclGoToPushUps);
+
+
+
+
+
+
         Window w= getWindow();
         w.getDecorView().setSystemUiVisibility((View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         BottomNavigationView bottomNavigationView=findViewById(R.id.bNav);

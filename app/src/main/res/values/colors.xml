@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mainOrange">#F46F08</color>
     <color name="unchecked">#AA6E4A</color>
+    <color name="background_main_color">#FBCD95</color>
 </resources>

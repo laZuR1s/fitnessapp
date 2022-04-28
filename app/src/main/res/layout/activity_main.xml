@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="1dp"
-    android:background="#FBCD95"
+    android:background="@color/background_main_color"
     android:screenOrientation="portrait"
     >
-
+<!--Фон взят из https://yandex.fr/images/search?text=картинка%20фитнес%20для%20приложения&from=tabbar&pos=13&img_url=https%3A%2F%2Fimage.winudf.com%2Fv2%2Fimage1%2FY29tLlBlZG9tZXRlclN0ZXBzVHJhY2tlcl9zY3JlZW5fNl8xNTQ5MjU2NjcwXzAyMA%2Fscreen-6.jpg%3Ffakeurl%3D1%26type%3D.jpg&rpt=simage -->
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"

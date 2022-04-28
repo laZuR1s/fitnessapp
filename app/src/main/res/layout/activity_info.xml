@@ -6,14 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".InfoActivity"
     android:orientation="vertical"
+    android:background="@color/background_main_color"
     >
 
+
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="96sp" />
+        android:layout_marginStart="0dp"
+        android:background="@color/mainOrange"
+        android:breakStrategy="high_quality"
+        android:enabled="true"
+        android:padding="5dp"
+        android:paddingStart="20dp"
+        android:selectAllOnFocus="true"
+        android:shadowColor="#090707"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+
+        android:singleLine="false"
+        android:soundEffectsEnabled="false"
+        android:text="@string/text_other"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textStyle="bold|italic"
+        app:drawableTint="#000000"
+        app:emojiCompatEnabled="true"
+        tools:ignore="TextContrastCheck" />
+
+
+    <Button
+        android:id="@+id/btn_about_author"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/mainOrange"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="@string/author_info_btn_text"
+        android:textSize="19sp"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_author_information"
+        app:iconGravity="textTop"
+        app:iconSize="35dp"
+        app:iconTint="#000000"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_about_app"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/mainOrange"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="@string/app_info_btn_text"
+        android:textSize="19sp"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_app_information"
+        app:iconGravity="textTop"
+        app:iconSize="35dp"
+        app:iconTint="#000000"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"
+        tools:ignore="TextContrastCheck" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

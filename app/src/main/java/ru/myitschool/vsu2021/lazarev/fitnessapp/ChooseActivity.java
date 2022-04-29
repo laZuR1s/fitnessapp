@@ -23,6 +23,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
         Window w= getWindow();
         w.getDecorView().setSystemUiVisibility((View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         setContentView(R.layout.activity_choose);
+
         Button btnPushUps=(Button) findViewById(R.id.btn_pushups);
        View.OnClickListener oclGoToPushUps= new View.OnClickListener() {
             @Override
@@ -34,7 +35,35 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
         btnPushUps.setOnClickListener(oclGoToPushUps);
 
 
+        Button btnPressEx=(Button) findViewById(R.id.btn_press_exercises);
+        View.OnClickListener oclGoToPressEx= new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext()
+                        ,PressExercises.class));
+            }
+        };
+        btnPressEx.setOnClickListener(oclGoToPressEx);
 
+        Button btnPullUps=(Button) findViewById(R.id.btn_pullups);
+        View.OnClickListener oclGoToPullUps= new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext()
+                        ,PullUpsActivity.class));
+            }
+        };
+        btnPullUps.setOnClickListener(oclGoToPullUps);
+
+        Button btnSitUps=(Button) findViewById(R.id.btn_situps);
+        View.OnClickListener oclGoToSitUps= new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext()
+                        ,SitUpsActivity.class));
+            }
+        };
+        btnSitUps.setOnClickListener(oclGoToSitUps);
 
 
 

@@ -8,17 +8,17 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
-public class PushUpsActivity extends AppCompatActivity {
+public class PressExercises extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         Window w= getWindow();
         w.getDecorView().setSystemUiVisibility((View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_push_ups);
 
+        setContentView(R.layout.activity_press_exercises);
 
-        Button btnGoBack= (Button) findViewById(R.id.btn_goBack_from_pushups);
+        Button btnGoBack= (Button) findViewById(R.id.btn_goBack_from_pressEx);
         View.OnClickListener oclGoBack= new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,6 +27,7 @@ public class PushUpsActivity extends AppCompatActivity {
             }
         };
         btnGoBack.setOnClickListener(oclGoBack);
+
 
     }
 }

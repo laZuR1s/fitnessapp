@@ -64,6 +64,7 @@
 
 
     <Button
+        android:id="@+id/btn_press_exercises"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
@@ -85,6 +86,7 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
+        android:id="@+id/btn_pullups"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
@@ -106,6 +108,7 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
+        android:id="@+id/btn_situps"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"

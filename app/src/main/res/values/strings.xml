@@ -10,5 +10,5 @@
     <string name="author_info_btn_text">Информация об авторе</string>
     <string name="app_info_btn_text">Информация о приложении</string>
     <string name="pushups_info">Информация об упражнении</string>
-    <string name="start_pushups">Начать упражнение</string>
+    <string name="start_ex">Начать упражнение</string>
 </resources>

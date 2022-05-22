@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitnessapp">
         <activity
+            android:name=".PushUpsInfo"
+            android:exported="false" />
+        <activity
             android:name=".SitUpsActivity"
             android:exported="false" />
         <activity

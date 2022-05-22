@@ -18,6 +18,16 @@ public class PushUpsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_push_ups);
 
 
+        Button btnStart= (Button) findViewById(R.id.btn_info_pushups);
+
+        View.OnClickListener oclBtnGoToSecAct = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext()
+                        ,PushUpsInfo.class));
+            }
+        };
+        btnStart.setOnClickListener(oclBtnGoToSecAct);
         Button btnGoBack= (Button) findViewById(R.id.btn_goBack_from_pushups);
         View.OnClickListener oclGoBack= new View.OnClickListener() {
             @Override

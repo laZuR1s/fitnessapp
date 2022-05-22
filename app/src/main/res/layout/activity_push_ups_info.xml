@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PushUpsInfo"
+    android:background="@color/background_main_color"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:background="@color/mainOrange"
+        android:breakStrategy="high_quality"
+        android:enabled="true"
+        android:padding="5dp"
+        android:selectAllOnFocus="true"
+        android:shadowColor="#090707"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+
+        android:singleLine="false"
+        android:soundEffectsEnabled="false"
+        android:text="Виды отжиманий"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textStyle="bold|italic"
+        app:drawableTint="#000000"
+        app:emojiCompatEnabled="true"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="50dp"
+
+        android:text="1. C КОЛЕН -
+
+Самый простой вариант. Встаньте на колени и отжимайтесь. Старайтесь сохранять правильную форму: держите локти близко к телу, не прижимайте плечи к ушам, сохраняйте спину прямой и смотрите в пол."
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="120dp"
+
+        android:text="2. ОТ ВОЗВЫШЕНИЯ -
+
+Выберите возвышение высотой около 50 см и отжимайтесь от него. Чем ниже опора, тем сложнее вам будет."
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="175dp"
+
+        android:text="3. КЛАССИЧЕСКИЕ-
+Поставьте руки на ширине плеч, пальцы направьте вперёд. Следите, чтобы плечи находились над кистями. Напрягите пресс и ягодицы, опустите плечи и сведите лопатки.
+
+Опуститесь, глядя в пол, не задирайте голову в нижней точке. Коснитесь грудью пола и выжмите себя наверх. Двигайтесь плавно и под контролем во всех фазах движения.
+"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="290dp"
+
+        android:text="4. АЛМАЗНЫЕ -
+
+Такие отжимания нагружают грудь и трицепс лучше классических. Встаньте в упор лёжа, поставьте кисти рядом, соедините большие и указательные пальцы рук, чтобы между ними появился ромб. Отжимайтесь в таком положении."
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="375dp"
+
+        android:text="5. С ШИРОКОЙ ПОСТАНОВКОЙ -
+
+Поставьте руки шире плеч, пальцы направьте вперёд или слегка в стороны. Опуститесь, сохраняя правильную форму, и выжмите себя наверх. Можете также выполнять упражнение с колен или с возвышения."
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

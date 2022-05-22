@@ -48,12 +48,18 @@
         app:iconTint="#000000"
         app:strokeColor="#000000"
         app:strokeWidth="5dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
-        android:paddingStart="20dp"
+        android:paddingHorizontal="12dp"
         android:paddingTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="автор пипипупучееек"
-        />
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Всех приветствую, я автор этого приложения. Меня зовут Лазарев Александр, я ученик 10-ого класса. Это приложение что-то вроде моего творчества, не несет сложных функций, а лишь показывает то, что я умею. В случае нахождения ошибок приложения, пишите на почту: sashalazyr@gmail.com Также связывайтесь со мной по номеру телефона: +79805572371. Я приму любые предложения и критику, обращайтесь, буду рад исправить недочеты" />
+
+
+</ScrollView>
 
 </LinearLayout>

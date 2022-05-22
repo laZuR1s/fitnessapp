@@ -20,7 +20,6 @@
         android:breakStrategy="high_quality"
         android:enabled="true"
         android:padding="5dp"
-        android:paddingStart="20dp"
         android:selectAllOnFocus="true"
         android:shadowColor="#090707"
         android:shadowDx="1"

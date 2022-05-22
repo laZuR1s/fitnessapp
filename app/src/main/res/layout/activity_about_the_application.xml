@@ -54,12 +54,15 @@
         app:strokeColor="#000000"
         app:strokeWidth="5dp" />
     <TextView
-        android:paddingStart="20dp"
+        android:paddingHorizontal="12dp"
         android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="приложение пипипупучееек"
+        android:textSize="30sp"
+
+        android:text="Данное приложение представляет собой простешую реализацию приложения - фитнес тренера. Хоть функционал очень мал, но даже этого хватит чтобы вести регулярные занятия и совершенствовать себя. "
         />
+
 
 
 </LinearLayout>

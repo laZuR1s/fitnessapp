@@ -8,26 +8,24 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
-public class PushUpsInfo extends AppCompatActivity {
+public class PullUpsInfo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         Window w= getWindow();
         w.getDecorView().setSystemUiVisibility((View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        setContentView(R.layout.activity_push_ups_info);
+        setContentView(R.layout.activity_pull_ups_info);
 
         Button btnGoBack= (Button) findViewById(R.id.btn_goBack_from_pullups_info);
         View.OnClickListener oclGoBack= new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext()
-                        ,PushUpsActivity.class));
+                        ,ChooseActivity.class));
             }
         };
         btnGoBack.setOnClickListener(oclGoBack);
-
-
-
     }
 }

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PushUpsActivity"
-    android:orientation="vertical"
+    tools:context=".TimerActivity"
     android:background="@color/background_main_color">
 
     <TextView
@@ -16,7 +15,6 @@
         android:breakStrategy="high_quality"
         android:enabled="true"
         android:padding="5dp"
-        android:paddingStart="20dp"
         android:selectAllOnFocus="true"
         android:shadowColor="#090707"
         android:shadowDx="1"
@@ -25,7 +23,7 @@
 
         android:singleLine="false"
         android:soundEffectsEnabled="false"
-        android:text="ПОДТЯГИВАНИЯ"
+        android:text="Начинайте делать упражнение"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="27sp"
@@ -34,14 +32,16 @@
         app:emojiCompatEnabled="true"
         tools:ignore="TextContrastCheck" />
 
+
     <Button
-        android:id="@+id/btn_goBack_from_pullups"
+        android:id="@+id/btn_goBack_from_timer"
         style="@style/Widget.Material3.Button"
 
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
         android:backgroundTint="#E3B47C"
         android:text="Назад"
         android:textColor="#000000"
@@ -51,50 +51,55 @@
         app:strokeColor="#000000"
         app:strokeWidth="5dp" />
 
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="60sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
     <Button
-        android:id="@+id/btn_info_pullups"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
         android:backgroundTint="@color/mainOrange"
         android:shadowColor="#000000"
         android:shadowDx="1"
         android:shadowDy="2"
         android:shadowRadius="10"
-        android:stateListAnimator="@android:anim/fade_out"
-        android:text="@string/pushups_info"
-        android:textSize="18sp"
-        app:cornerRadius="30dp"
-        app:icon="@drawable/ic_item_other"
-        app:iconGravity="textTop"
-        app:iconSize="35dp"
+        android:text="Start"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/ic_start_pause"
+        app:iconSize="20dp"
         app:iconTint="#000000"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp"
-        tools:ignore="TextContrastCheck" />
+        app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/btn_start_pullups"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/mainOrange"
+        android:layout_toEndOf="@+id/button_start_pause"
+        android:backgroundTint="#F3DF28"
         android:shadowColor="#000000"
         android:shadowDx="1"
         android:shadowDy="2"
         android:shadowRadius="10"
-        android:stateListAnimator="@android:anim/fade_out"
-        android:text="@string/start_ex"
-        android:textSize="18sp"
-        app:cornerRadius="30dp"
-        app:icon="@drawable/ic_start_exercise"
-        app:iconGravity="textTop"
-        app:iconSize="40dp"
+        android:text="reset"
+        android:visibility="invisible"
+        app:cornerRadius="50dp"
+        app:icon="@android:drawable/stat_notify_sync"
         app:iconTint="#000000"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp"
-        tools:ignore="TextContrastCheck" />
+        app:strokeWidth="2dp"
+        tools:visibility="visible" />
 
-</LinearLayout>
+</RelativeLayout>

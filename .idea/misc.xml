@@ -15,11 +15,15 @@
         <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_choose.xml" value="0.22" />
         <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_info.xml" value="0.1765625" />
         <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_press_ex_info.xml" value="0.22604166666666667" />
         <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_press_exercises.xml" value="0.1707193515704154" />
-        <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_pull_ups.xml" value="0.1707193515704154" />
+        <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_pull_ups.xml" value="0.1" />
+        <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_pull_ups_info.xml" value="0.25559481743227325" />
         <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_push_ups.xml" value="0.1765625" />
         <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_push_ups_info.xml" value="0.25" />
-        <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_sit_ups.xml" value="0.1707193515704154" />
+        <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_sit_ups.xml" value="0.67" />
+        <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_sit_ups_info.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/layout/activity_timer_push_ups.xml" value="0.12273550724637682" />
         <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/menu/bottom_menu.xml" value="0.18020833333333333" />
         <entry key="..\:/Users/Alexandr Young/AndroidStudioProjects/Fitnessapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2109375" />
       </map>

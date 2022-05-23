@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".PushUpsInfo"
+        android:background="@color/background_main_color"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:background="@color/mainOrange"
+            android:breakStrategy="high_quality"
+            android:enabled="true"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#090707"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="10"
+
+            android:singleLine="false"
+            android:soundEffectsEnabled="false"
+            android:text="Виды занятий на пресс"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="bold|italic"
+            app:drawableTint="#000000"
+            app:emojiCompatEnabled="true"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button"
+            android:id="@+id/btn_goBack_from_pressEx_info"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#E3B47C"
+            android:text="Назад"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+            app:icon="@drawable/ic_back"
+            app:iconTint="#000000"
+            app:strokeColor="#000000"
+            app:strokeWidth="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:text="1. ПЛАНКА - Это самое знаменитое статическое упражнение для пресса. Кстати, планка тренирует не только мышцы пресса, но и множество других мышц всего тела. Планка прекрасно развивает выносливость и отлично сушит тело (избавляет от лишних килограммов). Встаньте на четвереньки, а затем примите положение планки, стоя на локтях.
+"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/plank_press"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:textSize="15sp"
+            android:text="2. ПОДЪЕМЫ ПРЯМЫХ НОГ ЛЕЖА - Поднимать ноги лежа очень полезно. Лягте на коврик, ноги вместе. Приподнимите голову от пола и согните руки в локтях, как показано на фото. Если голову удерживать трудно, положите руки за голову и придерживайте её ладонями. Плавно поднимайте и опускайте прямые ноги, слегка касаясь пятками пола. При подъеме ног делайте выдох, при опускании – вдох."
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/leg_raises_press"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:textSize="15sp"
+            android:text="3. СКРУЧИВАНИЯ ЛЕЖА - Лягте на коврик, руки за голову, ноги согните в коленях. Затем на выдохе опустить грудную клетку и немного приподнять тело, оторвав спину от пола. Не стремитесь, выполняя скручивания, поднимать тело слишком высоко. Этого не требуется. Обратите внимание на положение головы и рук. Не следует тянуть голову руками! Голова свободно лежит на ладонях и приподнимается лишь немного вместе с телом. Локти все время держите разведенными в стороны."
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/twisting_press"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:textSize="15sp"
+            android:text="4. СИТАП - Лягте на коврик, согните ноги в коленях, руки вытяните в сторону головы. Энергично поднимите руки и быстро подтяните за ними тело, чтобы оказаться в положении сидя, как показано на фото. Ситап следует выполнять без пауз, непрерывно поднимая и опуская тело. Если при выполнении ситапа Ваши ноги отрываются от пола, можно зацепиться ими за неподвижную опору: диван, шкаф, тренажер и т.д. Или попросите напарника по тренировкам подержать Вас за стопы, пока выполняете подход."
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/sitap_press"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:textSize="15sp"
+            android:text="5. ПОДТЯГИВАНИЯ КОЛЕНЕЙ К ГРУДИ НА ТУРНИКЕ - Необходимо выполнять его в висе на турнике. Это требует сильных рук. Рекомендую использовать специальные перчатки, чтобы не получить мозоли на ладонях. Необходимо повиснуть на турнике так, чтобы ноги не касались пола. Мышцы пресса должны быть расслаблены и растянуты. Энергично подтяните колени к груди, одновременно сгибая ноги в коленях. Задержитесь в этом положении на мгновение, почувствовав напряжение и сокращение мышц пресса. Затем плавно верните ноги  в исходное положение. Выполняйте подъемы ног непрерывно, без длительных пауз между повторениями."
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/knee_pullups_press"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

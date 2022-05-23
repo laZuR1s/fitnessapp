@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".PushUpsInfo"
+        android:background="@color/background_main_color"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:background="@color/mainOrange"
+            android:breakStrategy="high_quality"
+            android:enabled="true"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#090707"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="10"
+
+            android:singleLine="false"
+            android:soundEffectsEnabled="false"
+            android:text="Виды приседаний"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="bold|italic"
+            app:drawableTint="#000000"
+            app:emojiCompatEnabled="true"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            style="@style/Widget.Material3.Button"
+            android:id="@+id/btn_goBack_from_situps_info"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#E3B47C"
+            android:text="Назад"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+            app:icon="@drawable/ic_back"
+            app:iconTint="#000000"
+            app:strokeColor="#000000"
+            app:strokeWidth="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:text="1. КЛАССИЧЕСКИЕ ПРИСЕДАНИЯ - Для выполнения приседаний встаньте прямо, ноги на ширине плеч, носки стоп слега развести в стороны. Напрягите поясницу, отведите таз назад и немного наклоните торс вперед, согните ноги в коленях и опуститесь как можно ниже (насколько позволяет Ваша гибкость). Затем энергично поднимитесь в исходное положение. При сгибании ног делайте глубокий вдох, при разгибании ног – выдох."
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/classic_situps"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:text="2. ПРИСЕДАНИЯ ПИСТОЛЕТИКОМ - Исходное положение – стоя, ноги вместе. Вытяните руки вперед и начните выносить правую ногу вперед. Одновременно сгибайте левую ногу в колене. Постарайтесь опуститься как можно ниже, стараясь не касаться правой ногой пола и не теряя равновесие. Затем энергично разогните левую ногу и встаньте. Упражнение стоит повторить для второй ноги.
+"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/pistol_situps"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:text="3. ПРИСЕДАНИЯ СО ШТАНГОЙ НА ГРУДИ - Прижмитесь к грифу штанги грудью. Скрестите руки и положите их сверху на гриф. У Вас должна получиться стабильная конструкция, позволяющая без труда удерживать штангу на груди. Снимите штангу со стоек и сделайте шаг вперед. Ноги на ширине плеч. Аккуратно согните ноги, опустившись в глубокий присед. Обратите внимание, это единственны вариант. Поднимайтесь из приседа быстро, решительно."
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/barbell_situps"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:text="4. ПРИСЕДАНИЯ С ГАНТЕЛЯМИ В РУКАХ - Возьмите гантели в руки и встаньте прямо. Ноги на ширине не более 20-30 см. Если поставить ноги шире, это заметно осложнит выполнение приседаний, так как гантели должны находиться по бокам и будут задевать Вас и мешать приседать. Напрягите поясницу, отведите таз назад, наклоните торс вперед и сгибайте ноги в коленях. Обычно достаточно опуститься до положения “бедра параллельны полу”. Затем энергично разогните ноги и встаньте в исходное положение.
+"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/dumbbells_situps"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:text="5. БОЛГАРСКИЙ СПЛИТ-ПРИСЕД - Возьмите гантели в руки и встаньте спиной к скамье, примерно в 60 см от нее. Основная работа должна выполняться мышцами левой ноги и левой ягодицей. Плавно присядьте как можно глубже на левой ноге. Затем энергично поднимитесь в исходное положение. Затем сразу же необходимо выполнить такой же подход для правой ноги."
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:paddingTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/bolgarian_situps"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

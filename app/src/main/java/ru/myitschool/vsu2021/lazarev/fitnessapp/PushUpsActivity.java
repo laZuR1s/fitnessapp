@@ -38,5 +38,15 @@ public class PushUpsActivity extends AppCompatActivity {
         };
         btnGoBack.setOnClickListener(oclGoBack);
 
+        Button btnStartEx= (Button) findViewById(R.id.btn_start_pushups);
+        View.OnClickListener oclStartEx= new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext()
+                        , TimerActivity.class));
+            }
+        };
+        btnStartEx.setOnClickListener(oclStartEx);
+
     }
 }

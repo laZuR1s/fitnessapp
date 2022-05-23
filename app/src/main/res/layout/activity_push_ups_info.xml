@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".PushUpsInfo"
     android:background="@color/background_main_color"
     android:orientation="vertical">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +29,7 @@
 
         android:singleLine="false"
         android:soundEffectsEnabled="false"
-        android:text="Виды отжиманий"
+        android:text="@string/pushups_types_text"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="27sp"
@@ -32,66 +38,125 @@
         app:emojiCompatEnabled="true"
         tools:ignore="TextContrastCheck" />
 
+    <Button
+        style="@style/Widget.Material3.Button"
+        android:id="@+id/btn_goBack_from_pullups_info"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#E3B47C"
+        android:text="Назад"
+        android:textColor="#000000"
+        android:textSize="14sp"
+
+        app:icon="@drawable/ic_back"
+        app:iconTint="#000000"
+        app:strokeColor="#000000"
+        app:strokeWidth="5dp" />
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
-        android:paddingTop="50dp"
+        android:paddingTop="10dp"
 
-        android:text="1. C КОЛЕН -
+        android:text="@string/knees_pushups_text"
+        android:textSize="15sp"
+        android:textStyle="bold" >
+    </TextView>
 
-Самый простой вариант. Встаньте на колени и отжимайтесь. Старайтесь сохранять правильную форму: держите локти близко к телу, не прижимайте плечи к ушам, сохраняйте спину прямой и смотрите в пол."
-        android:textSize="13sp"
-        android:textStyle="bold" />
+    <ImageView
+        android:paddingTop="10dp"
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
         android:paddingHorizontal="10dp"
-        android:paddingTop="120dp"
-
-        android:text="2. ОТ ВОЗВЫШЕНИЯ -
-
-Выберите возвышение высотой около 50 см и отжимайтесь от него. Чем ниже опора, тем сложнее вам будет."
-        android:textSize="13sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingHorizontal="10dp"
-        android:paddingTop="175dp"
-
-        android:text="3. КЛАССИЧЕСКИЕ-
-Поставьте руки на ширине плеч, пальцы направьте вперёд. Следите, чтобы плечи находились над кистями. Напрягите пресс и ягодицы, опустите плечи и сведите лопатки.
-
-Опуститесь, глядя в пол, не задирайте голову в нижней точке. Коснитесь грудью пола и выжмите себя наверх. Двигайтесь плавно и под контролем во всех фазах движения.
-"
-        android:textSize="13sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingHorizontal="10dp"
-        android:paddingTop="290dp"
-
-        android:text="4. АЛМАЗНЫЕ -
-
-Такие отжимания нагружают грудь и трицепс лучше классических. Встаньте в упор лёжа, поставьте кисти рядом, соедините большие и указательные пальцы рук, чтобы между ними появился ромб. Отжимайтесь в таком положении."
-        android:textSize="13sp"
-        android:textStyle="bold" />
+        android:src="@drawable/knees_pushups"
+        />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
-        android:paddingTop="375dp"
+        android:paddingTop="10dp"
 
-        android:text="5. С ШИРОКОЙ ПОСТАНОВКОЙ -
+        android:text="@string/high_pushups_text"
+        android:textSize="15sp"
+        android:textStyle="bold" >
 
-Поставьте руки шире плеч, пальцы направьте вперёд или слегка в стороны. Опуститесь, сохраняя правильную форму, и выжмите себя наверх. Можете также выполнять упражнение с колен или с возвышения."
-        android:textSize="13sp"
-        android:textStyle="bold" />
+    </TextView>
+    <ImageView
+        android:paddingTop="10dp"
 
-</RelativeLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:paddingHorizontal="10dp"
+        android:src="@drawable/high_pushups"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+
+        android:text="@string/classic_pushups_text"
+        android:textSize="15sp"
+        android:textStyle="bold" >
+
+    </TextView>
+
+    <ImageView
+        android:paddingTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/classic_pushups"
+        android:paddingHorizontal="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+
+        android:text="@string/diamond_pushups_text"
+        android:textSize="15sp"
+        android:textStyle="bold" >
+
+    </TextView>
+    <ImageView
+        android:paddingTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/diamond_pushups"
+        android:paddingHorizontal="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+
+        android:text="@string/wide_pushups_text"
+        android:textSize="15sp"
+        android:textStyle="bold" >
+
+    </TextView>
+
+    <ImageView
+        android:paddingTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/wide_pushups"
+        android:paddingHorizontal="10dp"
+
+        />
+</LinearLayout>
+</ScrollView>

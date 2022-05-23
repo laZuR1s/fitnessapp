@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutTheAuthorActivity"
@@ -48,18 +52,37 @@
         app:iconTint="#000000"
         app:strokeColor="#000000"
         app:strokeWidth="5dp" />
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
     <TextView
         android:paddingHorizontal="12dp"
         android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="Всех приветствую, я автор этого приложения. Меня зовут Лазарев Александр, я ученик 10-ого класса. Это приложение что-то вроде моего творчества, не несет сложных функций, а лишь показывает то, что я умею. В случае нахождения ошибок приложения, пишите на почту: sashalazyr@gmail.com Также связывайтесь со мной по номеру телефона: +79805572371. Я приму любые предложения и критику, обращайтесь, буду рад исправить недочеты" />
+        android:text="Всех приветствую, я автор этого приложения. Меня зовут Лазарев Александр, я ученик 10-ого класса. Это приложение что-то вроде моего творчества, не несет сложных функций, а лишь показывает то, что я умею. "
+        />
+<TextView
+    android:paddingHorizontal="12dp"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="27sp"
+    android:text=" В случае нахождения ошибок приложения, пишите на почту: sashalazyr@gmail.com"/>
 
-
-</ScrollView>
+    <TextView
+        android:paddingHorizontal="12dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="Также связывайтесь со мной по номеру телефона: +79805572371."/>
+    <TextView
+        android:paddingHorizontal="12dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text=" Я приму любые предложения и критику, обращайтесь, буду рад исправить недочеты"/>
 
 </LinearLayout>
+    </ScrollView>

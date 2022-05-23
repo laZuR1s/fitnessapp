@@ -51,7 +51,7 @@
         app:strokeWidth="5dp" />
 
     <Button
-        android:id="@+id/btn_info_pressEx"
+        android:id="@+id/btn_info_situps"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
@@ -74,7 +74,7 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/btn_start_pressEx"
+        android:id="@+id/btn_start_SitUps"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"

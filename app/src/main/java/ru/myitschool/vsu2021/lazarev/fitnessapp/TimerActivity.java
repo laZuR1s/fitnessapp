@@ -31,8 +31,8 @@ public class TimerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Window w= getWindow();
-        w.getDecorView().setSystemUiVisibility((View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        Window w = getWindow();
+        w.getDecorView().setSystemUiVisibility((View.SYSTEM_UI_FLAG_HIDE_NAVIGATION) | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         setContentView(R.layout.activity_timer);
         mTextViewCountDown = findViewById(R.id.text_view_countdown);
         mButtonsStartPause = findViewById(R.id.button_start_pause);
@@ -41,9 +41,9 @@ public class TimerActivity extends AppCompatActivity {
         mButtonsStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mTimerRunning){
+                if (mTimerRunning) {
                     pauseTimer();
-                }else {
+                } else {
                     startTimer();
                 }
             }
@@ -57,20 +57,19 @@ public class TimerActivity extends AppCompatActivity {
         updateCountDownText();
 
 
-
-        Button btnGoBack= (Button) findViewById(R.id.btn_goBack_from_timer);
-        View.OnClickListener oclGoBack= new View.OnClickListener() {
+        Button btnGoBack = (Button) findViewById(R.id.btn_goBack_from_timer);
+        View.OnClickListener oclGoBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext()
-                        ,ChooseActivity.class));
+                        , ChooseActivity.class));
             }
         };
         btnGoBack.setOnClickListener(oclGoBack);
     }
 
-    private void startTimer(){
-        mCountDownTimer = new CountDownTimer(mTimeLeftInMillis,1000) {
+    private void startTimer() {
+        mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 mTimeLeftInMillis = millisUntilFinished;
@@ -85,34 +84,33 @@ public class TimerActivity extends AppCompatActivity {
                 mButtonReset.setVisibility(View.VISIBLE);
             }
         }.start();
-        mTimerRunning=true;
+        mTimerRunning = true;
         mButtonsStartPause.setText("pause");
         mButtonReset.setVisibility(View.INVISIBLE);
     }
 
-    private void pauseTimer(){
+    private void pauseTimer() {
         mCountDownTimer.cancel();
         mTimerRunning = false;
         mButtonsStartPause.setText("Start");
         mButtonReset.setVisibility(View.VISIBLE);
     }
 
-    private void resetTimer(){
+    private void resetTimer() {
         mTimeLeftInMillis = START_TIME_IN_MILLIS;
         updateCountDownText();
         mButtonReset.setVisibility(View.INVISIBLE);
         mButtonsStartPause.setVisibility(View.VISIBLE);
     }
 
-    private void updateCountDownText(){
-        int minutes = (int) (mTimeLeftInMillis/1000)/60;
-        int seconds = (int) (mTimeLeftInMillis/1000)%60;
+    private void updateCountDownText() {
+        int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
+        int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
 
-        String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d",minutes,seconds);
+        String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
 
         mTextViewCountDown.setText(timeLeftFormatted);
     }
-
 
 
 }

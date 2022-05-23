@@ -15,42 +15,40 @@ public class InfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-            Window w= getWindow();
-            w.getDecorView().setSystemUiVisibility((View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        Window w = getWindow();
+        w.getDecorView().setSystemUiVisibility((View.SYSTEM_UI_FLAG_HIDE_NAVIGATION) | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         setContentView(R.layout.activity_info);
 
-        Button btnAboutAuthor= findViewById(R.id.btn_about_author);
-        View.OnClickListener oclGoToAuthorInf= new View.OnClickListener() {
+        Button btnAboutAuthor = findViewById(R.id.btn_about_author);
+        View.OnClickListener oclGoToAuthorInf = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),AboutTheAuthorActivity.class));
+                startActivity(new Intent(getApplicationContext(), AboutTheAuthorActivity.class));
             }
         };
         btnAboutAuthor.setOnClickListener(oclGoToAuthorInf);
 
-        Button btnAboutApp= findViewById(R.id.btn_about_app);
-        View.OnClickListener oclGoToAppInf= new View.OnClickListener() {
+        Button btnAboutApp = findViewById(R.id.btn_about_app);
+        View.OnClickListener oclGoToAppInf = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),AboutTheApplicationActivity.class));
+                startActivity(new Intent(getApplicationContext(), AboutTheApplicationActivity.class));
             }
         };
         btnAboutApp.setOnClickListener(oclGoToAppInf);
 
 
-
-        BottomNavigationView bottomNavigationView=findViewById(R.id.bNav);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bNav);
         bottomNavigationView.setSelectedItemId(R.id.item_other);
         bottomNavigationView.setOnItemSelectedListener(item -> {
-            switch (item.getItemId())
-            {
+            switch (item.getItemId()) {
                 case R.id.item_other:
 
                     return true;
                 case R.id.item_home:
-                    startActivity(new Intent(InfoActivity.this,ChooseActivity.class));
-                   overridePendingTransition(0,0);
-                   return true;
+                    startActivity(new Intent(InfoActivity.this, ChooseActivity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
             }
             return false;
         });

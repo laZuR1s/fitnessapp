@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutTheApplicationActivity"
-    android:orientation="vertical"
     android:background="@color/background_main_color"
-    >
-
+    android:orientation="vertical"
+    tools:context=".AboutTheApplicationActivity">
 
 
     <TextView
@@ -30,7 +27,7 @@
 
         android:singleLine="false"
         android:soundEffectsEnabled="false"
-        android:text="Информация о приложении"
+        android:text="@string/info_app_text"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="27sp"
@@ -46,23 +43,22 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:backgroundTint="#E3B47C"
-        android:text="Назад"
+        android:text="@string/back_text"
         android:textColor="#000000"
         android:textSize="14sp"
         app:icon="@drawable/ic_back"
         app:iconTint="#000000"
         app:strokeColor="#000000"
         app:strokeWidth="5dp" />
+
     <TextView
-        android:paddingHorizontal="12dp"
-        android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/about_app_big_text"
 
-        android:text="Данное приложение представляет собой простешую реализацию приложения - фитнес тренера. Хоть функционал очень мал, но даже этого хватит чтобы вести регулярные занятия и совершенствовать себя. "
-        />
-
+        android:textSize="30sp" />
 
 
 </LinearLayout>

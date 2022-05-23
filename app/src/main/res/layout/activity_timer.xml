@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TimerActivity"
-    android:background="@color/background_main_color">
+    android:background="@color/background_main_color"
+    tools:context=".TimerActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
 
         android:singleLine="false"
         android:soundEffectsEnabled="false"
-        android:text="Начинайте делать упражнение"
+        android:text="@string/start_doing_ex_text"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="27sp"
@@ -39,11 +39,11 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="53dp"
         android:backgroundTint="#E3B47C"
-        android:text="Назад"
+        android:text="@string/back_text"
         android:textColor="#000000"
         android:textSize="14sp"
         app:icon="@drawable/ic_back"
@@ -55,12 +55,11 @@
         android:id="@+id/text_view_countdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:00"
-        android:textSize="60sp"
-        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        />
+        android:text="@string/start_time"
+        android:textColor="@color/black"
+        android:textSize="60sp" />
 
     <Button
         android:id="@+id/button_start_pause"
@@ -73,7 +72,7 @@
         android:shadowDx="1"
         android:shadowDy="2"
         android:shadowRadius="10"
-        android:text="Start"
+        android:text="@string/start"
         app:cornerRadius="50dp"
         app:icon="@drawable/ic_start_pause"
         app:iconSize="20dp"
@@ -93,7 +92,7 @@
         android:shadowDx="1"
         android:shadowDy="2"
         android:shadowRadius="10"
-        android:text="reset"
+        android:text="@string/reset"
         android:visibility="invisible"
         app:cornerRadius="50dp"
         app:icon="@android:drawable/stat_notify_sync"

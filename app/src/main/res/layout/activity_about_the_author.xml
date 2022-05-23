@@ -1,88 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AboutTheAuthorActivity"
-    android:orientation="vertical"
-    android:background="@color/background_main_color">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:background="@color/mainOrange"
-        android:breakStrategy="high_quality"
-        android:enabled="true"
-        android:padding="5dp"
-        android:paddingStart="20dp"
-        android:selectAllOnFocus="true"
-        android:shadowColor="#090707"
-        android:shadowDx="1"
-        android:shadowDy="2"
-        android:shadowRadius="10"
+        android:background="@color/background_main_color"
+        android:orientation="vertical"
+        tools:context=".AboutTheAuthorActivity">
 
-        android:singleLine="false"
-        android:soundEffectsEnabled="false"
-        android:text="Информация об авторе"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="27sp"
-        android:textStyle="bold|italic"
-        tools:ignore="TextContrastCheck" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:background="@color/mainOrange"
+            android:breakStrategy="high_quality"
+            android:enabled="true"
+            android:padding="5dp"
+            android:paddingStart="20dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#090707"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="10"
 
-    <Button
-        android:id="@+id/btn_goBack_from_about_author"
-        style="@style/Widget.Material3.Button"
+            android:singleLine="false"
+            android:soundEffectsEnabled="false"
+            android:text="@string/author_info_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="bold|italic"
+            tools:ignore="TextContrastCheck" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:backgroundTint="#E3B47C"
-        android:text="Назад"
-        android:textColor="#000000"
-        android:textSize="14sp"
+        <Button
+            android:id="@+id/btn_goBack_from_about_author"
+            style="@style/Widget.Material3.Button"
 
-        app:icon="@drawable/ic_back"
-        app:iconTint="#000000"
-        app:strokeColor="#000000"
-        app:strokeWidth="5dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#E3B47C"
+            android:text="@string/back_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
 
-    <TextView
-        android:paddingHorizontal="12dp"
-        android:paddingTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Всех приветствую, я автор этого приложения. Меня зовут Лазарев Александр, я ученик 10-ого класса. Это приложение что-то вроде моего творчества, не несет сложных функций, а лишь показывает то, что я умею. "
-        />
-<TextView
-    android:paddingHorizontal="12dp"
-    android:paddingTop="10dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="27sp"
-    android:text=" В случае нахождения ошибок приложения, пишите на почту: sashalazyr@gmail.com"/>
+            app:icon="@drawable/ic_back"
+            app:iconTint="#000000"
+            app:strokeColor="#000000"
+            app:strokeWidth="5dp" />
 
-    <TextView
-        android:paddingHorizontal="12dp"
-        android:paddingTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="27sp"
-        android:text="Также связывайтесь со мной по номеру телефона: +79805572371."/>
-    <TextView
-        android:paddingHorizontal="12dp"
-        android:paddingTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text=" Я приму любые предложения и критику, обращайтесь, буду рад исправить недочеты"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="10dp"
+            android:text="@string/author_info_big_text"
+            android:textSize="30sp" />
 
-</LinearLayout>
-    </ScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="10dp"
+            android:text="@string/author_info_big_text2"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="10dp"
+            android:text="@string/author_info_big_text3"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="10dp"
+            android:text="@string/author_info_big_text4"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</ScrollView>

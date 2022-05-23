@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
+
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".PushUpsInfo"
         android:background="@color/background_main_color"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context=".PushUpsInfo">
 
 
         <TextView
@@ -30,7 +30,7 @@
 
             android:singleLine="false"
             android:soundEffectsEnabled="false"
-            android:text="Виды подтягиваний"
+            android:text="@string/types_pullUps_text"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="27sp"
@@ -40,14 +40,14 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
-            style="@style/Widget.Material3.Button"
             android:id="@+id/btn_goBack_from_pullups_info"
+            style="@style/Widget.Material3.Button"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:backgroundTint="#E3B47C"
-            android:text="Назад"
+            android:text="@string/back_text"
             android:textColor="#000000"
             android:textSize="14sp"
 
@@ -55,25 +55,6 @@
             app:iconTint="#000000"
             app:strokeColor="#000000"
             app:strokeWidth="5dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="10dp"
-            android:paddingTop="10dp"
-
-            android:text="1. ПРЯМЫМ ХВАТОМ - Повисните на турнике, опустите плечи и сведите лопатки. Подтяните себя вверх до выхода подбородка за турник и опуститесь обратно. Совершайте движение плавно и под контролем. Не вытягивайте шею вверх или вперёд, не расслабляйте плечи в нижней части подтягивания."
-            android:textSize="15sp"
-            android:textStyle="bold" >
-        </TextView>
-
-        <ImageView
-            android:paddingTop="10dp"
-
-            android:layout_width="wrap_content"
-            android:layout_height="250dp"
-            android:paddingHorizontal="10dp"
-            android:src="@drawable/straight_grip_pullups"
-            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,20 +62,17 @@
             android:paddingHorizontal="10dp"
             android:paddingTop="10dp"
 
-            android:text="2. АВСТРАЛИЙСКИЕ - Для таких подтягиваний нужен невысокий турник. Возьмитесь за низкий турник прямым хватом на ширине плеч, вытяните тело в одну линию. Подтяните себя до касания турника грудью и опуститесь обратно.
-"
+            android:text="@string/straight_grip_pullups_text"
             android:textSize="15sp"
-            android:textStyle="bold" >
-        </TextView>
+            android:textStyle="bold" />
 
         <ImageView
-            android:paddingTop="10dp"
-
             android:layout_width="wrap_content"
+
             android:layout_height="250dp"
             android:paddingHorizontal="10dp"
-            android:src="@drawable/australian_pullups"
-            />
+            android:paddingTop="10dp"
+            android:src="@drawable/straight_grip_pullups" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -102,19 +80,17 @@
             android:paddingHorizontal="10dp"
             android:paddingTop="10dp"
 
-            android:text="3. ОБРАТНЫМ ХВАТОМ - Такой хват чуть больше нагружает бицепс и подостную мышцу, выстилающую лопатку. Впрочем, различия в нагрузке незначительны. Многим людям проще подтягиваться обратным хватом из‑за удобного расположения предплечий, поэтому можете начать освоение классических подтягиваний с него."
+            android:text="@string/australian_pullups_text"
             android:textSize="15sp"
-            android:textStyle="bold" >
-        </TextView>
+            android:textStyle="bold" />
 
         <ImageView
-            android:paddingTop="10dp"
-
             android:layout_width="wrap_content"
+
             android:layout_height="250dp"
             android:paddingHorizontal="10dp"
-            android:src="@drawable/reverse_grip_pullups"
-            />
+            android:paddingTop="10dp"
+            android:src="@drawable/australian_pullups" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -122,19 +98,17 @@
             android:paddingHorizontal="10dp"
             android:paddingTop="10dp"
 
-            android:text="4. КОММАНДО - Это подтягивания нейтральным хватом, но на одной перекладине. Упражнение усложняется за счёт необходимости стабилизировать корпус. Если вы расслабитесь, тело будет раскачиваться и разворачиваться в разные стороны. Подтягивайтесь до выхода головы на турник, чередуйте стороны через раз."
+            android:text="@string/reverse_grip_pullups_text"
             android:textSize="15sp"
-            android:textStyle="bold" >
-        </TextView>
+            android:textStyle="bold" />
 
         <ImageView
-            android:paddingTop="10dp"
-
             android:layout_width="wrap_content"
+
             android:layout_height="250dp"
             android:paddingHorizontal="10dp"
-            android:src="@drawable/commando_pullups"
-            />
+            android:paddingTop="10dp"
+            android:src="@drawable/reverse_grip_pullups" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -142,20 +116,35 @@
             android:paddingHorizontal="10dp"
             android:paddingTop="10dp"
 
-            android:text="5. ШИРОКИМ ХВАТОМ - Такой вариант сложнее подтягиваний с руками на ширине плеч, так что приступайте к освоению, только когда хорошо научитесь подтягиваться в классике. Возьмитесь за перекладину прямым хватом шире плеч, подтянитесь до касания грудью турника и опуститесь обратно.
-"
+            android:text="@string/commando_pullups_text"
             android:textSize="15sp"
-            android:textStyle="bold" >
-        </TextView>
+            android:textStyle="bold" />
 
         <ImageView
-            android:paddingTop="10dp"
-
             android:layout_width="wrap_content"
+
             android:layout_height="250dp"
             android:paddingHorizontal="10dp"
-            android:src="@drawable/wide_pullups"
-            />
+            android:paddingTop="10dp"
+            android:src="@drawable/commando_pullups" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+
+            android:text="@string/wide_pullups_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="250dp"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/wide_pullups" />
 
 
     </LinearLayout>

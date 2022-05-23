@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PushUpsActivity"
+    android:background="@color/background_main_color"
     android:orientation="vertical"
-    android:background="@color/background_main_color">
+    tools:context=".PushUpsActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
 
         android:singleLine="false"
         android:soundEffectsEnabled="false"
-        android:text="ПРИСЕДАНИЯ"
+        android:text="@string/sitUps_text"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="27sp"
@@ -33,6 +33,7 @@
         app:drawableTint="#000000"
         app:emojiCompatEnabled="true"
         tools:ignore="TextContrastCheck" />
+
     <Button
         android:id="@+id/btn_goBack_from_sithups"
         style="@style/Widget.Material3.Button"
@@ -42,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:backgroundTint="#E3B47C"
-        android:text="Назад"
+        android:text="@string/back_text"
         android:textColor="#000000"
         android:textSize="14sp"
         app:icon="@drawable/ic_back"

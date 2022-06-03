@@ -38,33 +38,20 @@ public class TimerActivity extends AppCompatActivity {
         mButtonsStartPause = findViewById(R.id.button_start_pause);
         mButtonReset = findViewById(R.id.button_reset);
 
-        mButtonsStartPause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mTimerRunning) {
-                    pauseTimer();
-                } else {
-                    startTimer();
-                }
+        mButtonsStartPause.setOnClickListener(v -> {
+            if (mTimerRunning) {
+                pauseTimer();
+            } else {
+                startTimer();
             }
         });
-        mButtonReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resetTimer();
-            }
-        });
+        mButtonReset.setOnClickListener(v -> resetTimer());
         updateCountDownText();
 
 
-        Button btnGoBack = (Button) findViewById(R.id.btn_goBack_from_timer);
-        View.OnClickListener oclGoBack = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext()
-                        , ChooseActivity.class));
-            }
-        };
+        Button btnGoBack = findViewById(R.id.btn_goBack_from_timer);
+        View.OnClickListener oclGoBack = v -> startActivity(new Intent(getApplicationContext()
+                , ChooseActivity.class));
         btnGoBack.setOnClickListener(oclGoBack);
     }
 
